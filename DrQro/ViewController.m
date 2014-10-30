@@ -55,7 +55,7 @@
         [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error) {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
             if (!error) {
-                [self presentViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"navigationController"] animated:YES completion:nil];
+                [self presentViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"rootViewController"] animated:YES completion:nil];
                 
             } else {
                 // ocurrio un error

@@ -19,7 +19,7 @@
     
     if ([PFUser currentUser]) {
         // usuario loggeado
-        [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"navigationController"]];
+        [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"rootViewController"]];
     }
     
     return YES;

@@ -9,6 +9,15 @@
 #import "ReporteDetailViewController.h"
 
 @interface ReporteDetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *coverImage;
+@property (weak, nonatomic) IBOutlet UIImageView *circleImageView;
+@property (weak, nonatomic) IBOutlet UILabel *diaLabel;
+@property (weak, nonatomic) IBOutlet UILabel *idLabel;
+@property (weak, nonatomic) IBOutlet UILabel *abcLabel;
+@property (weak, nonatomic) IBOutlet UILabel *colorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *peligroLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tipoLabel;
+@property (weak, nonatomic) IBOutlet UITextView *reporteTextView;
 
 @end
 
@@ -27,6 +36,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = self.object[@"name"];
+    //self.diaLabel.text = [self.object[@"updatedAt"] stringValue];
+    self.idLabel.text = self.object[@"code"];
+    self.abcLabel.text = self.object[@"abc"];
+    self.colorLabel.text = self.object[@"color"];
+    //self.peligroLabel.text = [self.object[@"peligro"] stringValue]; //BOOL
+    self.tipoLabel.text = self.object[@"tipo"];
+    self.reporteTextView.text = self.object[@"decripcion"];
 }
 
 - (void)didReceiveMemoryWarning

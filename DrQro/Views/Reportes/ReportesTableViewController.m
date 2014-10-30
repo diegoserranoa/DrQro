@@ -7,6 +7,7 @@
 //
 
 #import "ReportesTableViewController.h"
+#import "ReporteDetailViewController.h"
 
 @interface ReportesTableViewController ()
 
@@ -74,6 +75,10 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if ([[segue identifier] isEqualToString:@"reporteSegue"]) {
+        ReporteDetailViewController *rdvc = [segue destinationViewController];
+        rdvc.object = [self.objects objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    }
     
 }
 

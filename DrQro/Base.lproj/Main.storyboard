@@ -68,12 +68,12 @@
             </objects>
             <point key="canvasLocation" x="739" y="84"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Reportes-->
         <scene sceneID="aoL-Qx-1bm">
             <objects>
                 <navigationController storyboardIdentifier="reportesNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2OF-48-uNQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="mDG-GZ-BA9"/>
+                    <navigationItem key="navigationItem" title="Reportes" id="mDG-GZ-BA9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jQC-xz-UVI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -328,14 +328,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="doctoresCell" rowHeight="76" id="hND-s0-knD">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="doctoresCell" rowHeight="76" id="hND-s0-knD" customClass="DoctoresTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hND-s0-knD" id="Mkr-Ye-pi4">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xtF-ie-jfX">
+                                            <rect key="frame" x="20" y="13" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvp-5b-SyV">
+                                            <rect key="frame" x="78" y="27" width="189" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="doctorImagen" destination="xtF-ie-jfX" id="ZSl-p4-9SW"/>
+                                    <outlet property="doctorLabel" destination="Rvp-5b-SyV" id="thY-dc-z4O"/>
                                     <segue destination="PEY-Pz-e5c" kind="push" identifier="doctorSegue" id="7ci-7K-ovk"/>
                                 </connections>
                             </tableViewCell>
@@ -405,30 +420,45 @@
             </objects>
             <point key="canvasLocation" x="2830" y="855"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Doctor Detail View Controller-->
         <scene sceneID="hQQ-99-BOz">
             <objects>
-                <tableViewController id="PEY-Pz-e5c" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KU9-E9-hVX">
+                <tableViewController id="PEY-Pz-e5c" customClass="DoctorDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="KU9-E9-hVX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.62" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="2eQ-Pu-gdZ">
                             <rect key="frame" x="0.0" y="64" width="320" height="138"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zeG-eO-rCF">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64h-Fi-xEO">
+                                    <rect key="frame" x="128" y="37" width="64" height="64"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="e5Y-OD-l6a">
-                                <rect key="frame" x="0.0" y="224" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="doctorCell" rowHeight="73" id="e5Y-OD-l6a">
+                                <rect key="frame" x="0.0" y="224" width="320" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e5Y-OD-l6a" id="r0u-07-eCO">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dAR-3a-hJg">
+                                            <rect key="frame" x="11" y="6" width="299" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="VbH-NR-sXy" kind="push" id="QZj-Co-ckb"/>
-                                </connections>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -436,7 +466,17 @@
                             <outlet property="delegate" destination="PEY-Pz-e5c" id="Bgj-aM-UdV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="iZd-aB-jFb"/>
+                    <navigationItem key="navigationItem" id="iZd-aB-jFb">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Mapa" id="wA9-4j-JUX">
+                            <connections>
+                                <segue destination="VbH-NR-sXy" kind="push" id="zFH-ZE-v2Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doctorImagen" destination="64h-Fi-xEO" id="I1V-O7-tIY"/>
+                        <outlet property="fondoImagen" destination="zeG-eO-rCF" id="lu7-gF-ejZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0u-ia-qF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -453,6 +493,12 @@
                     <view key="view" contentMode="scaleToFill" id="csn-5x-Kr3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="djm-vR-9mq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wn8-90-iAT"/>
@@ -461,12 +507,12 @@
             </objects>
             <point key="canvasLocation" x="3852" y="84"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Doctores-->
         <scene sceneID="CeW-aw-g3q">
             <objects>
                 <navigationController storyboardIdentifier="doctoresNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xr2-QF-y5d" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="rR7-3b-a1S"/>
+                    <navigationItem key="navigationItem" title="Doctores" id="rR7-3b-a1S"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="94F-eB-0F2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -480,12 +526,12 @@
             </objects>
             <point key="canvasLocation" x="2332" y="84"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Perfil-->
         <scene sceneID="dhf-qG-SdM">
             <objects>
                 <navigationController storyboardIdentifier="perfilNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ay6-IZ-43Z" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="a7E-Uy-bvt"/>
+                    <navigationItem key="navigationItem" title="Perfil" id="a7E-Uy-bvt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="brS-5l-bXP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

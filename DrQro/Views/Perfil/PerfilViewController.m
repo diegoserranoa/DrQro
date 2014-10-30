@@ -30,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Perfil";
     
     self.sectionOne = @[@"direccion", @"email", @"telefono", @"codigo"];
     self.sectionTwo = @[@"username", @"password"];

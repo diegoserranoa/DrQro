@@ -8,6 +8,8 @@
 
 #import "DoctoresTableViewController.h"
 #import "DoctorDetailViewController.h"
+#import "DoctoresTableViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface DoctoresTableViewController ()
 
@@ -28,6 +30,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"Doctores";
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,7 +48,7 @@
     
     [query orderByAscending:@"name"];
     
-    if (self.objects.count == 0) {
+    if (self.objects.count != 0) {
         [query setCachePolicy:kPFCachePolicyCacheElseNetwork];
     }
     
@@ -58,12 +62,14 @@
 
 #pragma mark - Table View Data Source
 
--(PFTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
 {
-    PFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"doctoresCell"];
+    DoctoresTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"doctoresCell"];
     
-    cell.textLabel.text = object[@"name"];
+    cell.doctorLabel.text = object[@"name"];
     
+    PFFile *image = object[@"imagen"];
+    [cell.doctorImagen sd_setImageWithURL:[NSURL URLWithString:image.url]];
     return cell;
 }
 

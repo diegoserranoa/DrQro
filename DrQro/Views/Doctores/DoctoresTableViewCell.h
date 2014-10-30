@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DoctoresTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *doctorImagen;
+@property (weak, nonatomic) IBOutlet UILabel *doctorLabel;
 
 @end

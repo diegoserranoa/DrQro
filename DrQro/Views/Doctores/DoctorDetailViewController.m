@@ -7,8 +7,11 @@
 //
 
 #import "DoctorDetailViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface DoctorDetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *doctorImagen;
+@property (weak, nonatomic) IBOutlet UIImageView *fondoImagen;
 
 @end
 
@@ -27,6 +30,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = self.object[@"name"];
+    
+    PFFile *image = self.object[@"imagen"];
+    [self.doctorImagen sd_setImageWithURL:[NSURL URLWithString:image.url]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,6 +10,10 @@
 		7E235ABD1A02370300A4FA05 /* SidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235ABC1A02370300A4FA05 /* SidePanelController.m */; };
 		7E235AC01A02394B00A4FA05 /* SideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235ABF1A02394B00A4FA05 /* SideTableViewController.m */; };
 		7E235AC71A025CA300A4FA05 /* ReportesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235AC61A025CA300A4FA05 /* ReportesTableViewController.m */; };
+		7E235ACA1A025F0900A4FA05 /* ReporteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235AC91A025F0900A4FA05 /* ReporteDetailViewController.m */; };
+		7E235ACD1A025F4000A4FA05 /* DoctoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235ACC1A025F4000A4FA05 /* DoctoresTableViewController.m */; };
+		7E235AD01A025F5E00A4FA05 /* PerfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235ACF1A025F5E00A4FA05 /* PerfilViewController.m */; };
+		7E235AD31A0261C400A4FA05 /* PerfilTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235AD21A0261C400A4FA05 /* PerfilTableViewCell.m */; };
 		7E898EAE1A022C8B00CDE36C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E898EAD1A022C8B00CDE36C /* Foundation.framework */; };
 		7E898EB01A022C8B00CDE36C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E898EAF1A022C8B00CDE36C /* CoreGraphics.framework */; };
 		7E898EB21A022C8B00CDE36C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E898EB11A022C8B00CDE36C /* UIKit.framework */; };
@@ -45,6 +49,14 @@
 		7E235ABF1A02394B00A4FA05 /* SideTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideTableViewController.m; sourceTree = "<group>"; };
 		7E235AC51A025CA300A4FA05 /* ReportesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportesTableViewController.h; path = Views/Reportes/ReportesTableViewController.h; sourceTree = "<group>"; };
 		7E235AC61A025CA300A4FA05 /* ReportesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportesTableViewController.m; path = Views/Reportes/ReportesTableViewController.m; sourceTree = "<group>"; };
+		7E235AC81A025F0900A4FA05 /* ReporteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReporteDetailViewController.h; path = Views/Reportes/ReporteDetailViewController.h; sourceTree = "<group>"; };
+		7E235AC91A025F0900A4FA05 /* ReporteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReporteDetailViewController.m; path = Views/Reportes/ReporteDetailViewController.m; sourceTree = "<group>"; };
+		7E235ACB1A025F4000A4FA05 /* DoctoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoctoresTableViewController.h; path = Views/Doctores/DoctoresTableViewController.h; sourceTree = "<group>"; };
+		7E235ACC1A025F4000A4FA05 /* DoctoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoctoresTableViewController.m; path = Views/Doctores/DoctoresTableViewController.m; sourceTree = "<group>"; };
+		7E235ACE1A025F5E00A4FA05 /* PerfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PerfilViewController.h; path = Views/Perfil/PerfilViewController.h; sourceTree = "<group>"; };
+		7E235ACF1A025F5E00A4FA05 /* PerfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PerfilViewController.m; path = Views/Perfil/PerfilViewController.m; sourceTree = "<group>"; };
+		7E235AD11A0261C400A4FA05 /* PerfilTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PerfilTableViewCell.h; path = Views/Perfil/PerfilTableViewCell.h; sourceTree = "<group>"; };
+		7E235AD21A0261C400A4FA05 /* PerfilTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PerfilTableViewCell.m; path = Views/Perfil/PerfilTableViewCell.m; sourceTree = "<group>"; };
 		7E898EAA1A022C8B00CDE36C /* DrQro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrQro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E898EAD1A022C8B00CDE36C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E898EAF1A022C8B00CDE36C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +131,8 @@
 			children = (
 				7E235AC51A025CA300A4FA05 /* ReportesTableViewController.h */,
 				7E235AC61A025CA300A4FA05 /* ReportesTableViewController.m */,
+				7E235AC81A025F0900A4FA05 /* ReporteDetailViewController.h */,
+				7E235AC91A025F0900A4FA05 /* ReporteDetailViewController.m */,
 			);
 			name = Reportes;
 			sourceTree = "<group>";
@@ -126,6 +140,8 @@
 		7E235AC31A025C7F00A4FA05 /* Doctores */ = {
 			isa = PBXGroup;
 			children = (
+				7E235ACB1A025F4000A4FA05 /* DoctoresTableViewController.h */,
+				7E235ACC1A025F4000A4FA05 /* DoctoresTableViewController.m */,
 			);
 			name = Doctores;
 			sourceTree = "<group>";
@@ -133,6 +149,10 @@
 		7E235AC41A025C8600A4FA05 /* Perfil */ = {
 			isa = PBXGroup;
 			children = (
+				7E235ACE1A025F5E00A4FA05 /* PerfilViewController.h */,
+				7E235ACF1A025F5E00A4FA05 /* PerfilViewController.m */,
+				7E235AD11A0261C400A4FA05 /* PerfilTableViewCell.h */,
+				7E235AD21A0261C400A4FA05 /* PerfilTableViewCell.m */,
 			);
 			name = Perfil;
 			sourceTree = "<group>";
@@ -355,7 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E235AD01A025F5E00A4FA05 /* PerfilViewController.m in Sources */,
+				7E235AD31A0261C400A4FA05 /* PerfilTableViewCell.m in Sources */,
 				7E235AC01A02394B00A4FA05 /* SideTableViewController.m in Sources */,
+				7E235ACA1A025F0900A4FA05 /* ReporteDetailViewController.m in Sources */,
+				7E235ACD1A025F4000A4FA05 /* DoctoresTableViewController.m in Sources */,
 				7E235AC71A025CA300A4FA05 /* ReportesTableViewController.m in Sources */,
 				7E898EC41A022C8B00CDE36C /* ViewController.m in Sources */,
 				7E235ABD1A02370300A4FA05 /* SidePanelController.m in Sources */,

@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="2332" y="-744"/>
         </scene>
-        <!--View Controller-->
+        <!--Reporte Detail View Controller-->
         <scene sceneID="aB8-iS-4g5">
             <objects>
-                <viewController id="J4e-3l-4qf" sceneMemberID="viewController">
+                <viewController id="J4e-3l-4qf" customClass="ReporteDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T4C-FE-rTS"/>
                         <viewControllerLayoutGuide type="bottom" id="kJY-wP-TgO"/>
@@ -185,10 +185,10 @@
             </objects>
             <point key="canvasLocation" x="2830" y="-744"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Doctores Table View Controller-->
         <scene sceneID="Gys-7w-Nuf">
             <objects>
-                <tableViewController id="6yV-Fg-tcM" sceneMemberID="viewController">
+                <tableViewController id="6yV-Fg-tcM" customClass="DoctoresTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RQm-EC-2st">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,22 +217,47 @@
             </objects>
             <point key="canvasLocation" x="2830" y="84"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Perfil View Controller-->
         <scene sceneID="42q-G7-CzP">
             <objects>
-                <tableViewController id="Ekd-bn-JqO" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aVB-Ux-6rd">
+                <tableViewController id="Ekd-bn-JqO" customClass="PerfilViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="57" sectionHeaderHeight="22" sectionFooterHeight="22" id="aVB-Ux-6rd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.64398950729927007" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4jM-SP-ztn">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="perfilCell" rowHeight="57" id="4jM-SP-ztn" customClass="PerfilTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4jM-SP-ztn" id="YJ5-n2-TKR">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dkq-KR-CDQ">
+                                            <rect key="frame" x="19" y="4" width="282" height="49"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEG-Ih-M9K">
+                                                    <rect key="frame" x="51" y="14" width="201" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VWq-5B-1vn">
+                                                    <rect key="frame" x="11" y="9" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="perfilImageView" destination="VWq-5B-1vn" id="dJR-lx-vgN"/>
+                                    <outlet property="perfilLabel" destination="rEG-Ih-M9K" id="ZOc-Jg-E5w"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

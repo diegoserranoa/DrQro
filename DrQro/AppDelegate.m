@@ -19,6 +19,7 @@
     
     if ([PFUser currentUser]) {
         // usuario loggeado
+        [[PFUser currentUser] fetchInBackground];
         [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"rootViewController"]];
     }
     

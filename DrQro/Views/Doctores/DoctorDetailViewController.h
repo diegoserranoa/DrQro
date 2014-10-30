@@ -1,14 +1,13 @@
 //
-//  ReporteDetailViewController.h
+//  DoctorDetailViewController.h
 //  DrQro
 //
 //  Created by Diego Serrano on 10/20/14.
 //  Copyright (c) 2014 Diego Serrano. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface ReporteDetailViewController : UIViewController
+@interface DoctorDetailViewController : UITableViewController
 
 @property (strong, nonatomic) PFObject *object;
 

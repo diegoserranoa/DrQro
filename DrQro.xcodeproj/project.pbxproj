@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0D1FDC1A02A76C005A5C34 /* DoctorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D1FDB1A02A76C005A5C34 /* DoctorDetailViewController.m */; };
+		7E0D1FDF1A02A788005A5C34 /* DoctoresTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D1FDE1A02A788005A5C34 /* DoctoresTableViewCell.m */; };
 		7E235ABD1A02370300A4FA05 /* SidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235ABC1A02370300A4FA05 /* SidePanelController.m */; };
 		7E235AC01A02394B00A4FA05 /* SideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235ABF1A02394B00A4FA05 /* SideTableViewController.m */; };
 		7E235AC71A025CA300A4FA05 /* ReportesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E235AC61A025CA300A4FA05 /* ReportesTableViewController.m */; };
@@ -43,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		08515241AADC76F2C5E500DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0D1FDA1A02A76C005A5C34 /* DoctorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoctorDetailViewController.h; path = Views/Doctores/DoctorDetailViewController.h; sourceTree = "<group>"; };
+		7E0D1FDB1A02A76C005A5C34 /* DoctorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoctorDetailViewController.m; path = Views/Doctores/DoctorDetailViewController.m; sourceTree = "<group>"; };
+		7E0D1FDD1A02A788005A5C34 /* DoctoresTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoctoresTableViewCell.h; path = Views/Doctores/DoctoresTableViewCell.h; sourceTree = "<group>"; };
+		7E0D1FDE1A02A788005A5C34 /* DoctoresTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoctoresTableViewCell.m; path = Views/Doctores/DoctoresTableViewCell.m; sourceTree = "<group>"; };
 		7E235ABB1A02370300A4FA05 /* SidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidePanelController.h; path = SidePanel/SidePanelController.h; sourceTree = "<group>"; };
 		7E235ABC1A02370300A4FA05 /* SidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SidePanelController.m; path = SidePanel/SidePanelController.m; sourceTree = "<group>"; };
 		7E235ABE1A02394B00A4FA05 /* SideTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideTableViewController.h; sourceTree = "<group>"; };
@@ -142,6 +148,10 @@
 			children = (
 				7E235ACB1A025F4000A4FA05 /* DoctoresTableViewController.h */,
 				7E235ACC1A025F4000A4FA05 /* DoctoresTableViewController.m */,
+				7E0D1FDA1A02A76C005A5C34 /* DoctorDetailViewController.h */,
+				7E0D1FDB1A02A76C005A5C34 /* DoctorDetailViewController.m */,
+				7E0D1FDD1A02A788005A5C34 /* DoctoresTableViewCell.h */,
+				7E0D1FDE1A02A788005A5C34 /* DoctoresTableViewCell.m */,
 			);
 			name = Doctores;
 			sourceTree = "<group>";
@@ -379,9 +389,11 @@
 				7E235AD31A0261C400A4FA05 /* PerfilTableViewCell.m in Sources */,
 				7E235AC01A02394B00A4FA05 /* SideTableViewController.m in Sources */,
 				7E235ACA1A025F0900A4FA05 /* ReporteDetailViewController.m in Sources */,
+				7E0D1FDF1A02A788005A5C34 /* DoctoresTableViewCell.m in Sources */,
 				7E235ACD1A025F4000A4FA05 /* DoctoresTableViewController.m in Sources */,
 				7E235AC71A025CA300A4FA05 /* ReportesTableViewController.m in Sources */,
 				7E898EC41A022C8B00CDE36C /* ViewController.m in Sources */,
+				7E0D1FDC1A02A76C005A5C34 /* DoctorDetailViewController.m in Sources */,
 				7E235ABD1A02370300A4FA05 /* SidePanelController.m in Sources */,
 				7E898EBE1A022C8B00CDE36C /* AppDelegate.m in Sources */,
 				7E898EBA1A022C8B00CDE36C /* main.m in Sources */,

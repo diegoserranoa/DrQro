@@ -1,18 +1,18 @@
 //
-//  SidePanelController.m
+//  DoctorDetailViewController.m
 //  DrQro
 //
 //  Created by Diego Serrano on 10/20/14.
 //  Copyright (c) 2014 Diego Serrano. All rights reserved.
 //
 
-#import "SidePanelController.h"
+#import "DoctorDetailViewController.h"
 
-@interface SidePanelController ()
+@interface DoctorDetailViewController ()
 
 @end
 
-@implementation SidePanelController
+@implementation DoctorDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,10 +35,15 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) awakeFromNib
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [self setLeftPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"leftViewController"]];
-    [self setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"reportesNavigationController"]];
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
+*/
 
 @end

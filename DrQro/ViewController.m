@@ -2,7 +2,7 @@
 //  ViewController.m
 //  DrQro
 //
-//  Created by Diego Serrano on 10/30/14.
+//  Created by Diego Serrano on 10/20/14.
 //  Copyright (c) 2014 Diego Serrano. All rights reserved.
 //
 
@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) UITextField *activeField;
+@property (weak, nonatomic) IBOutlet UIImageView *fondoLogin;
 
 @end
 

@@ -2,7 +2,7 @@
 //  SideTableViewController.m
 //  DrQro
 //
-//  Created by Diego Serrano on 10/30/14.
+//  Created by Diego Serrano on 10/20/14.
 //  Copyright (c) 2014 Diego Serrano. All rights reserved.
 //
 
@@ -71,6 +71,12 @@
     }
     // Configure the cell...
     return cell;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 10.0f, 10.0f)];
+    return header;
 }
 
 

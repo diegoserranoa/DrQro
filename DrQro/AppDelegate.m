@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  DrQro
 //
-//  Created by Diego Serrano on 10/30/14.
+//  Created by Diego Serrano on 10/20/14.
 //  Copyright (c) 2014 Diego Serrano. All rights reserved.
 //
 
@@ -16,6 +16,10 @@
     
     [Parse setApplicationId:@"2jKwcOJDCe5fds7UA81bclE0d1vNccsbUumLLDTP"
                   clientKey:@"BxaX772OcksXQg8cLUXcahaVAN3ZkVSGTMHETVae"];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:62/255.0f green:142/255.0f blue:255/255.0f alpha:1.0f]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     
     if ([PFUser currentUser]) {
         // usuario loggeado

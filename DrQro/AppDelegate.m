@@ -13,6 +13,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [Parse setApplicationId:@"2jKwcOJDCe5fds7UA81bclE0d1vNccsbUumLLDTP"
+                  clientKey:@"BxaX772OcksXQg8cLUXcahaVAN3ZkVSGTMHETVae"];
+    
+    if ([PFUser currentUser]) {
+        // usuario loggeado
+        [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"navigationController"]];
+    }
+    
     return YES;
 }
 							
